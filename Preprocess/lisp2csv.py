@@ -3,14 +3,17 @@ import re
 import numpy as np
 import csv
 
+datapath = "../Data/chorales.lisp"
+filepath = "../Data/chorales.csv"
+
 # This script is simply used to transfomr original time-series dataset from lisp format to csv format
-with open("../Data/chorales.lisp", "r") as lines:
+with open("{path}".format(path=datapath), "r") as lines:
     array = []
     for line in lines:
     	if line.strip():
         	array.append(line)
 
-with open("../Data/chorales.csv", "w+") as f:
+with open("{path}".format(path=filepath), "w+") as f:
 	f.write("{t0}\t{t1}\t{t2}\t{t3}\t{t4}\t{t5}\t{t6}\n".format(t0="ID", t1="start_time", t2="pitch", t3="duration", t4="key_signature", t5="time_signature", t6="fermata"))
 	for i in range(0, len(array)):
 		chorale = np.asarray(re.findall(r'\b\d+\b', array[i])).astype("int")
