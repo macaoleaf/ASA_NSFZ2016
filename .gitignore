@@ -1,2 +1,3 @@
 .~lock.chorales.csv#
 */*.pyc
+*/test*.py
