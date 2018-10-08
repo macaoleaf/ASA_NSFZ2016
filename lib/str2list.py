@@ -6,7 +6,8 @@ import ast
 from io import StringIO
 
 # This script is used to transfer the string representation of list into list form, making it easier for future process
-filepath = "../Data/chorales.csv"
+
+# filepath = "../Data/chorales.csv"
 
 def str2list(path):
 	IDs = []
@@ -32,5 +33,5 @@ def str2list(path):
 				fermatas.append(ast.literal_eval(newline[6]))
 	return IDs, sts, pitchs, durs, keysigs, timesigs, fermatas
 
-IDs, sts, durs, pitchs, keysigs, timesigs, fermatas = str2list(filepath)
+# IDs, sts, durs, pitchs, keysigs, timesigs, fermatas = str2list(filepath)
 
