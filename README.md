@@ -2,6 +2,7 @@
 Group Project for the undergraduate research project competition of American Statistical Association
 
 # File Structure
+```
 .
 ├── data
 │   ├── *.csv
@@ -13,6 +14,7 @@ Group Project for the undergraduate research project competition of American Sta
 ├── src
 │   └── *.py
 └── README.md
+```
 
 * data
 **data** folder contains all files showing raw data
