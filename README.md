@@ -16,10 +16,9 @@ Group Project for the undergraduate research project competition of American Sta
 └── README.md
 ```
 
-* data
 **data** folder contains all files showing raw data
-* lib
+
 **lib** folder contains all scripts served as importable functions
-* src
+
 **src** folder contains all scripts for marchine learning 
 
