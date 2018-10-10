@@ -5,8 +5,8 @@ import csv
 
 # This script is simply used to transfomr original time-series dataset from lisp format to csv format
 
-# datapath = "../Data/chorales.lisp"
-# filepath = "../Data/chorales.csv"
+#datapath = "../data/chorales.lisp"
+#filepath = "../data/chorales.csv"
 
 def lisp2csv(datapath, filepath):
 	with open("{path}".format(path=datapath), "r") as lines:
@@ -31,4 +31,4 @@ def lisp2csv(datapath, filepath):
 			f.write("{ID}\t{st}\t{pitch}\t{dur}\t{keysig}\t{timesig}\t{fermata}\n".format(ID=ID, st=st, pitch=pitch, dur=dur, keysig=keysig, timesig=timesig, fermata=fermata))
 		f.close()
 
-
+#lisp2csv(datapath, filepath)
