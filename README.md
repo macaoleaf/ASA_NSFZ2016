@@ -7,13 +7,15 @@ Group Project for the undergraduate research project competition of American Sta
 ├── data
 │   ├── *.csv
 │   ├── *.doc
-│   └── *.lisp
+│   ├── *.lisp
+│   └── *.mat	
 ├── lib
 │   ├── __init__.py
 │   └── *.py
 ├── src
 │   └── *.py
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 **data** folder contains all files showing raw data
@@ -21,4 +23,11 @@ Group Project for the undergraduate research project competition of American Sta
 **lib** folder contains all scripts served as importable functions
 
 **src** folder contains all scripts for marchine learning 
+
+# Dependency Installation
+Open the terminal and simply type in the following command:
+
+```
+pip3 install -r requirements.txt
+```
 
